@@ -1,33 +1,51 @@
-<?php include "Assets/header.php"; ?>
-<hr>
-<main class="main-home">
-    <section class="slideshow">
-        <div class="slideshow-container">
-            <div class="slide fade">
-                <img class="slideshowimg" src="Assets/pexels-ella-olsson-1640774.jpg" width="400px" height="350">
-            </div>
-            <div class="slide fade">
-                <img class="slideshowimg" src="Assets/pexels-rajesh-tp-1603901.jpg" width="400px" height="350">
-            </div>
-            <div class="slide fade">
-                <img class="slideshowimg" src="Assets/pexels-marco-fischer-115740.jpg" width="400px" height="350">
-            </div>
-        </div>
-    </section>
-   
-    <section class="home_article">
-        <article>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione consequuntur nam fuga, nostrum quo officia. Expedita quos autem ut pariatur deserunt illum fugit commodi assumenda cumque, porro debitis iure velit illo dolorem odio ab nostrum distinctio quasi esse blanditiis? Soluta sequi quidem dolores inventore, fugit minima fuga perspiciatis tenetur natus expedita repudiandae, libero eius quia.</p>
-        </article>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatibus modi eius sint voluptatem ipsam alias magnam, tenetur commodi, laborum totam libero accusamus magni minus quisquam fugiat. Ullam maxime ratione dolorem velit maiores! Reiciendis, beatae, qui ad quidem maxime eaque accusamus molestias deserunt error voluptatum officiis ut laborum repudiandae quibusdam doloribus magni dicta dolor quos?</p>
-        </article>
-        <article>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur culpa delectus magnam natus, ad voluptatem labore accusamus voluptatibus maxime accusantium tempora voluptatum, et facere iste consectetur recusandae. Quibusdam, vel error. Rerum quod impedit iste fuga. Impedit sunt molestiae aliquam rem officia dignissimos cumque fugit a iste ullam, voluptas quam beatae libero molestias exercitationem optio? Tenetur!</p>
-        </article>
-    </section>
-    <section class="home-img">
-        <img src="Assets/pexels-malidate-van-769289.jpg" class="home_img1" width="300px" alt="">
-    </section></main>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snelle Hap - Home</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
 
-<?php include "Assets/footer.php"; ?>
+    <header>
+        <?php include 'assets/header.php'; ?>
+    </header>
+    
+
+<section>
+    <h2>Welkom bij Snelle Hap</h2>
+    <p>Snelle Hap biedt heerlijke gerechten voor een snelle, maar smaakvolle hap!</p>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/Images/kokteam.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/Images/SnelleHap.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/kokteam.jpeg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+
+<script src="/assets/slideshow.js"></script>
+<script src="assets/menu.js"></script>
+
+
+</body>
+</html>
