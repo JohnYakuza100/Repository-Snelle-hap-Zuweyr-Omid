@@ -16,7 +16,7 @@ header {
     align-items: center;
 }
 
-/* Footer styling */
+
 footer {
     background-color: #1b4279;
     color: white;
@@ -279,4 +279,84 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+}
+
+.about-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-intro h2 {
+    color: #1b4279;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-item h3 {
+    color: #1b4279;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.about-item:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px 10px;
+    }
+
+    .about-item h3 {
+        font-size: 20px;
+    }
+
+    .about-intro h2 {
+        font-size: 28px;
+    }
+
+    .about-intro p {
+        font-size: 16px;
+    }
 }
