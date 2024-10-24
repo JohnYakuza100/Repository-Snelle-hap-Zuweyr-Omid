@@ -11,29 +11,8 @@
 </head>
 <body>
     <script src="assets/menu.js"></script>
-    <header></header>
     <?php include '../assets/header.php'; ?>
-    </header>
-    <header>
-        <div class="header-container">
-            <img src="../images/Logo_snelle _hap.png" alt="Snelle Hap Logo" class="logo">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a href="../pages/menu.php">Ons Menu</a></li>
-                    <li><a href="../pages/about.php">Over Ons</a></li>
-                    <li><a href="../pages/gallery.php">Galerij</a></li>
-                    <li><a href="../pages/reservation.php">Reserveren</a></li>
-                    <li><a href="../pages/vacature.php">Vacatures</a></li>
-                    <li><a href="../pages/reviews.php">Reviews</a></li>
-                </ul>
-                <div class="hamburger" onclick="toggleMenu()">
-                    &#9776;
-                </div>
-            </nav>
-        </div>
-    </header>
-
+    
     <main><article class="article-privacybeleid">
         <h3>Privacyverklaring voor restaurantreserveringen</h3>
     
@@ -96,16 +75,5 @@
 </body>
 
 <?php include '../assets/footer.php'; ?>
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2024 Snelle Hap. Alle rechten voorbehouden.</p>
-        <nav>
-            <ul>
-                <li><a href="../pages/privacy.php">Privacybeleid</a></li>
-            </ul>
-        </nav>
-    </div>
-</footer>
-
 
 </html>
